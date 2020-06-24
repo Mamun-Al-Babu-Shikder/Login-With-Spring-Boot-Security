@@ -1,0 +1,21 @@
+package com.example.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * Created by A.A.MAMUN on 6/24/2020.
+ */
+@Controller
+public class LoginController {
+
+    @RequestMapping("/login")
+    public String loginPage(){
+        return "login";
+    }
+
+    @RequestMapping("/home")
+    public String homePage(){
+        return "home";
+    }
+}
